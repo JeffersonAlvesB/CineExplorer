@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta name="author" content="Jefferson Alves">
+    <title>CineExplorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="container-topo">
+        <h1 class="titulo">Cine<span class="titulo-span">Explorer</span></h1>
+    </header>
+    <main>
+        <section class="seção-pesquisa">
+            <div class="pesquisa-container">
+                <label class="label-pesquisa" for="pesquisa">Pesquisar Filme:</label>
+                <input type="search" id="pesquisa" placeholder="Digite nome do filme...">
+                <div class="pesquisa-list none" id="pesquisa-list">
+                </div>
+            </div>
+        </section>
+        <section class="container-filme ">
+            <div class="resultado">
+                <div class="loading"></div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
