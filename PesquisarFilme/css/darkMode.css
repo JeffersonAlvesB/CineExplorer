@@ -1,0 +1,70 @@
+.container_mode {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipt_mode {
+    position: absolute;
+    opacity: 0;
+}
+
+.sun {
+    position: absolute;
+    font-size: 3rem;
+    color: #666;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.ipt_mode:checked ~ .sun {
+    transition-delay: 0.8s;
+    transform: scale(1) rotate(360deg);
+}
+
+.moon {
+    font-size: 3rem;
+    color: #666;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+    transition: 1s ease;
+    transition-delay: 0.8s;
+}
+
+.ipt_mode:checked ~ .moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+.toogle {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+        inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px -4px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    transition: 1s;
+}
+
+.ipt_mode:checked ~ .toogle {
+    background-color: #e0d3d3;
+}
+
+.ligth {
+    background-color: #f8fafc;
+}
+
+.light_fonte {
+    color: rgb(15, 23, 42);
+}
+
+.ligth_sectionPesquisa {
+    background-color: #38bdf8;
+}

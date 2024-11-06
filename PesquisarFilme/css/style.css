@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --corFundo: rgb(15, 23, 42);
+    --corFundo2: rgb(22, 32, 55);
+    --corFundo3: #9ca3af;
+    --corLista: #222;
+    --bgLoading: #483d3d;
+    --fonteAzul: rgb(56 189 248);
+    --fonteBranca: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--corFundo);
+}
+
+.container-topo {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.titulo {
+    color: var(--fonteBranca);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.titulo-span {
+    color: var(--fonteAzul);
+}
+
+.secao-pesquisa {
+    background-color: var(--corFundo2);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-pesquisa {
+    color: var(--fonteBranca);
+    font-size: 1.5rem;
+}
+
+#pesquisa {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid var(--fonteAzul);
+    width: 339px;
+}
+
+#pesquisa::placeholder {
+    font-size: 1.2rem;
+}
+
+.pesquisa-container {
+    position: relative;
+}
+
+.pesquisa-list {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    max-height: 300px;
+    overflow-y: scroll;
+    z-index: 2;
+    scrollbar-width: thin;
+    scrollbar-color: var(--fonteAzul) rgba(0, 0, 0, 0.3);
+}
+
+.pesquisa-list .pesquisa-list-item {
+    background-color: var(--corFundo3);
+    border-top: 1px solid var(--fonteBranca);
+    border-bottom: 1px solid var(--fonteBranca);
+    padding: 0.5rem;
+    width: 339px;
+    color: var(--fonteBranca);
+    cursor: pointer;
+    text-align: left;
+}
+
+.pesquisa-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa-item-img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.pesquisa-item-info h3 {
+    font-size: 1rem;
+}
+
+.pesquisa-item-info p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    opacity: 0.6;
+}
+
+.pesquisa-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.pesquisa-list::-webkit-scrollbar-thumb {
+    background-color: var(--fonteAzul);
+    outline: none;
+    border-radius: 10px;
+}
+
+.container-filme {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.none {
+    display: none;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.filme-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 500px;
+    color: var(--fonteBranca);
+    font-size: 1.1rem;
+}
+
+.filme-titulo {
+    font-size: 1.3rem;
+}
+
+.filme-data-info {
+    list-style: none;
+}
+
+.img-filme {
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.loading {
+    display: none;
+    border: 8px solid var(--bgLoading);
+    border-top: 8px solid var(--fonteAzul);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    margin: 100px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 54rem) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .pesquisa-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        white-space: nowrap;
+    }
+
+    .resultado {
+        flex-direction: column;
+    }
+
+    #pesquisa {
+        width: 310px;
+    }
+
+    .pesquisa-list .pesquisa-list-item {
+        width: 310px;
+    }
+
+    .filme-info {
+        text-align: center;
+        width: 100%;
+    }
+}
