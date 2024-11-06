@@ -1,6 +1,6 @@
 # CineExplorer
 <h2>:bookmark_tabs: Sobre</h2>
-<p>Este site facilita a busca por informações de filmes, utilizando HTML, CSS e JavaScript. Ele permite que os usuários pesquisem filmes e obtenham dados como ano de lançamento, elenco, roteiristas, avaliação, entre outros. O design é responsivo, com as informações exibidas de forma clara e organizada.</p>
+<p>Este site facilita a busca por informações de filmes, utilizando HTML, CSS e JavaScript. Ele permite que os usuários pesquisem filmes e obtenham dados como ano de lançamento, elenco, roteiristas, avaliação, entre outros. O design é responsivo, tem tema dark e light mode e as informações exibidas de forma clara e organizada.</p>
 <h2>Tecnologias:</h2>
 
 <div style="display: inline_block">
@@ -11,4 +11,5 @@
 
 <h2>Link do site: <a href="https://jeffexplorer.netlify.app/">CineExplorer.com</a></h2>
 
-![Captura de tela_4-10-2024_115212_jeffexplorer netlify app](https://github.com/user-attachments/assets/fc18579d-1679-4c2a-acd9-f5e9e2d35151)
+![Captura de tela_6-11-2024_154235_127 0 0 1](https://github.com/user-attachments/assets/92568706-16c6-4ccb-a213-cbb5dbe642b8)
+
